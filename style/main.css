@@ -1,0 +1,138 @@
+
+*{ /*resetar*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limita o conteúdo para não sair da caixa*/
+    text-decoration: none; /*tira o sobrinhado dos links, linha em baixo*/
+}
+
+/*Declaração de variáveis tem que ser dentro do :root */
+:root{ 
+    --vermelha: #e50914;
+    --preta: #141414;
+}
+
+/*Elementos Base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+.filme-principal link{
+    color: #000;
+
+}
+
+header .container{
+    display: flex; /* Alinha todos os elementos para o topo*/
+    flex-direction: row;
+    align-items: center; /*Alinha os elementos para o cetro*/
+    justify-content: space-between; /*trabalha com os elementros na horizontal*/
+    /*space-between cria um espaço entre as tags NETFLEX e MENU CONTAINER*/
+}
+
+header .logo{
+    margin-left: 5px; /* Dando um espaçamento da logo da esquerda para direita*/
+    color: var(--vermelha);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /*Remover linhas dos liks*/
+    color: #AAA;
+    margin-right: 10px; /*Espaçamento das letras do menu*/
+
+}
+
+header a:hover{
+    color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/0-capa-house.jpg'); /*Referenciado o ederenço da imagem capa*/
+    /*linear-gradient é utilizado para criar um gradient de cores*/
+
+   height: 400px; /*Tamanho da caixa da imagem*/
+   background-size: cover; /*Ajustando a imagem para o tamanho da caixa*/
+
+   display: flex; /*por padrão sempre vai jogar os elementos em linha*/
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start; /*elementros sempre vai começar da esquerda para a direita*/
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%; /*utilizando o percentual será feito um calculo automático de posicionamento da tela, idependente da altura ou larguta*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none; /*tirar a borda do botão*/
+    color: white;
+
+    padding: 15px; /*lida com o espaço interno do elemento*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*mudar o curso como ponteiro para quando passar o mouse saber que é um parte clicável*/
+    transition: .3s ease all ; /*cuidada parte da transição entre uma animação ou outra*/
+    
+}
+
+/*Toda vez que passar o mouse sobre o botão irá inverter as  cores*/
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/*Dando um afastamento do icone do botão com a escrita do botão*/
+.botao i{
+    margin-right: 8px;
+}
+
+/*WRAPPER = ENVELOPAR*/
+
+.container{
+    margin-left: 20px; /*movendo o conteiner da margem 20px para direita*/
+
+}
+
+.filme-principal .container{
+    width: 70%; /* Largura máxima do bloco de texto até 70%*/
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

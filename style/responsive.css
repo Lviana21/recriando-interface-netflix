@@ -1,0 +1,20 @@
+/*aplicando a regra de formatação de midia com a tela no máximo 700px*/
+@media screen and (max-width: 700px){
+  header .container{
+     display: flex; 
+     flex-direction: column; /* ao começar diminuir a tela vai jogar as informações do texto para baixo*/
+  }
+
+  .botao{
+      margin-top: 5px;
+      width: 190px;
+      height: 60px;
+  }
+}
+
+/*concentrar o texto na esquerda*/
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
